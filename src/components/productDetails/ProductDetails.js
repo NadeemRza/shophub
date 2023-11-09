@@ -17,7 +17,7 @@ const ProductDetails = () => {
   return (
     <div className="productDetails">
       <div className="productDetailsContainer">
-        <Swiper slidesPerView={1} navigation modules={[Navigation]}>
+        <Swiper slidesPerView={1} navigation modules={[Navigation]} spaceBetween={5}>
           {data?.map((item) => (
             <SwiperSlide className="productDetailsCard">
               <div className="left">

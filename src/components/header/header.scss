@@ -81,5 +81,79 @@
                 width: 2rem;
             }
         }
+
+        .mobile_nav {
+            order: 1;
+
+            .hamburgerContainer {
+
+                .hamburger {
+                    background-color: #f8f6f2;
+                    border: none;
+                    border-radius: 50%;
+                    box-shadow: 0 0 0.2rem rgba(0, 0, 0, .5);
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    height: 4rem;
+                    opacity: .8;
+                    outline: none;
+                    text-align: center;
+                    width: 4rem;
+
+                    img {
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+            }
+
+            .mm_links {
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 50%;
+                height: 100vh;
+                background-color: #f8d4bd;
+                z-index: 40;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 3rem;
+                padding: 2rem 2rem;
+                padding-left: 3rem;
+
+                .links_cross {
+                    -webkit-tap-highlight-color: transparent;
+                    align-items: center;
+                    background-color: #f1d6c4;
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 1rem 0.5rem #fff;
+                    color: #000;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    width: 4rem;
+                    height: 4rem;
+                    align-self: flex-end;
+
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.75rem;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }

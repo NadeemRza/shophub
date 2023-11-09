@@ -11,6 +11,12 @@
     padding: 2.5rem 2rem 0.75rem;
     margin: 0 0.5rem;
 
+    @include mobile {
+        padding: 2.75rem 3rem;
+        margin: 0 1rem;
+        border-radius: 1rem;
+    }
+
     .accountElementContainer {
         display: flex;
         align-items: start;
@@ -21,6 +27,7 @@
             flex-direction: column;
             width: 100%;
             align-items: center;
+            gap: 4rem;
         }
 
         .left {
