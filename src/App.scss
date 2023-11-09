@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8d4bd;
+}
+
+a,
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@mixin mobile {
+  @media (max-width: 999px) {
+      @content;
+  }
+}

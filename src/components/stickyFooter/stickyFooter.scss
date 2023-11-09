@@ -1,0 +1,82 @@
+.stickyFooter {
+
+    .search,
+    .themeButton {
+        background-color: #f8f6f2;
+        border-radius: 50%;
+        box-shadow: 0 0 0.2rem rgba(0, 0, 0, .5);
+        cursor: pointer;
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        opacity: .8;
+        width: 4rem;
+        position: fixed;
+        z-index: 10;
+        top: 86%;
+
+        img {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+
+    .search {
+        left: 2rem;
+    }
+
+    .themeButton {
+        right: 2rem;
+
+        .switch {
+            display: inline-block;
+            height: 1.7rem;
+            position: relative;
+            width: 3rem;
+
+            input {
+                height: 0;
+                opacity: 0;
+                width: 0;
+            }
+
+            .slider {
+                align-items: center;
+                background-color: #f8d4bd;
+                bottom: 0;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                left: 0;
+                right: 0;
+                top: 0;
+
+                &.round {
+                    border-radius: 1.7rem;
+                }
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            .slider,
+            .slider:before {
+                position: absolute;
+                transition: .4s;
+            }
+
+            .slider:before {
+                background-color: #000;
+                content: "";
+                height: 1rem;
+                width: 1rem;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 0.2rem #ccc;
+            }
+        }
+    }
+}

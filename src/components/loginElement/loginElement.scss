@@ -1,0 +1,72 @@
+.loginElement {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginElementWrapper {
+        background-color: #f1d6c4;
+        color: #000;
+        width: 31rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 4rem;
+        background-image: radial-gradient(#dfa57f 8%, transparent 0);
+        background-position: 0 0;
+        background-size: 1.8rem 1.8rem;
+        box-shadow: inset 0 0 5rem 2rem #fff;
+        padding: 3rem 2rem;
+
+        h2 {
+            font-size: 2.6rem;
+        }
+
+        label {
+            font-size: 1.8rem;
+        }
+
+        input {
+            border: none;
+            border-radius: 1rem;
+            font-size: 2rem;
+            height: 4rem;
+            padding-left: 1.6rem;
+            width: 100% !important;
+        }
+
+        input:focus {
+            box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, .3);
+            outline: none;
+            transition: .1s;
+        }
+
+        .passwordInput {
+            position: relative;
+
+            .eye_image {
+                width: 2.5rem;
+                height: 2.5rem;
+                position: absolute;
+                left: 85%;
+                top: 15%;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            background-color: #000;
+            border: none;
+            border-radius: 2rem;
+            color: #fa8907;
+            font-size: 2rem;
+            height: 5rem;
+            outline: none;
+            transition: box-shadow .5s;
+            width: 20rem;
+            cursor: pointer;
+        }
+    }
+}

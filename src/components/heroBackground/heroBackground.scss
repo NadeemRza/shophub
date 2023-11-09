@@ -1,0 +1,108 @@
+@import "../../app.scss";
+
+.heroBackground {
+    padding: 0 1.25rem;
+    margin-bottom: -23rem;
+
+    .heroBackgroundContainer {
+        background: #fa8907;
+        border-radius: 5rem;
+        height: 30rem;
+        overflow: hidden;
+        position: relative;
+
+        .ripple-design {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .ripple-circle {
+                border: 0.1rem solid #ffffffb9;
+                border-radius: 50%;
+                position: absolute;
+            }
+
+            .shade0 {
+                opacity: 1;
+            }
+
+            .very-small {
+                background: #fb9a61;
+                -webkit-filter: blur(2px);
+                filter: blur(2px);
+                height: 9rem;
+                width: 9rem;
+            }
+
+            .small {
+                height: 22rem;
+                width: 22rem;
+            }
+
+            .shade1,
+            .shade2,
+            .shade3 {
+                opacity: .4;
+            }
+
+            .medium {
+                height: 35rem;
+                width: 35rem;
+            }
+
+            .large {
+                height: 48rem;
+                width: 48rem;
+            }
+        }
+
+        .contentContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            margin: 3.5rem auto 0;
+
+            @include mobile {
+                padding: 0 1rem;
+            }
+
+            .breadcrumb {
+                font-size: 1.5rem;
+
+                .active_crumb {
+                    color: #fff;
+                }
+
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            .selectContainer {
+
+                p {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+
+                select {
+                    background: #f1d6c4;
+                    border: none;
+                    border-radius: 1rem;
+                    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+                    outline: none;
+                }
+            }
+
+        }
+    }
+}

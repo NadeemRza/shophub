@@ -1,0 +1,22 @@
+@import "../../app.scss";
+
+.account{
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @include mobile {
+            position: static;
+        }
+    }
+
+    .stickyFooter{
+
+        .search{
+            top: 88%;
+        }
+    }
+}

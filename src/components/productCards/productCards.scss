@@ -1,0 +1,21 @@
+@import "../../app.scss";
+
+.product_cards{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 9;
+
+    .container{
+        width: 1600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.25rem;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+}
